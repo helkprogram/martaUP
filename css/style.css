@@ -13,10 +13,10 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    height: 300px;
 }
 .header-top {
     padding-top: 30px;
-    height: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
