@@ -17,6 +17,7 @@ $(function () {
         dotsClass: 'header-dots',
         autoplay: 2000,
         pauseOnHover: true,
-        verticalSwiping: true
+        verticalSwiping: true,
+        // draggable: false
     });
 });
