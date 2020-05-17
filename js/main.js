@@ -15,7 +15,7 @@ $(function () {
         vertical: true,
         dots: true,
         dotsClass: 'header-dots',
-        // autoplay: 2000,
+        autoplay: 2000,
         pauseOnHover: true,
         verticalSwiping: true
     });
