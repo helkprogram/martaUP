@@ -75,7 +75,7 @@ body {
 .popup {
     /* background-color: rgba(255,255,255,.2); */
     padding: 10px;
-    width: 500px;
+    width: 270px;
     border-radius: 20px;
     margin: 0 auto;
     transition: 1s;
@@ -119,9 +119,6 @@ body {
     color: #250F8A;
     outline: none;
     box-sizing: border-box;
-}
-a.form-btn {
-
 }
 .forgot {
     display: inline-block;
@@ -580,6 +577,10 @@ a.form-btn {
     .advantages-box--reverse .advantages-box__text {
         padding-left: 0;
     }
+    .popup {
+        width: 90%;
+    }
+    
 }
 @media (min-width: 571px) {
     .menu__list {
