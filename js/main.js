@@ -5,13 +5,34 @@ $(function () {
         $(this).toggleClass('menu__btn--active');
         $('.menu__list').slideToggle();
     });
+    // Форма
+    $('.popup').on('click', '.tab', function () {
+        $('.popup').find('.active').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-form').eq($(this).index()).addClass('active');
+    });
+
+
+    $('.login').magnificPopup();
+    $('.signup').magnificPopup();
+    $('.signup').on('click', function () {
+        $('.popup').find('.active').removeClass('active');
+        $('.tab').eq(1).addClass('active');
+        $('.tab-form').eq(1).addClass('active');
+    });
+    $('.login').on('click', function () {
+        $('.popup').find('.active').removeClass('active');
+        $('.tab').eq(0).addClass('active');
+        $('.tab-form').eq(0).addClass('active');
+    });
+
     // Слайдер
     $('.header-slider').slick({
         arrows: false,
         vertical: true,
         dots: true,
         dotsClass: 'header-dots',
-        autoplay: 2000,
+        autoplay: 4000,
         pauseOnHover: true,
         verticalSwiping: true,
         // draggable: false

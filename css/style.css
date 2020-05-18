@@ -69,6 +69,66 @@ body {
     box-shadow: inset 1px 1px 10px 2px rgba(0,0,0,0.5);
 }
 
+.hidden {
+    display: none;
+}
+.popup {
+    /* background-color: rgba(255,255,255,.2); */
+    padding: 10px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+    transition: 1s;
+    transform: scale(1);
+}
+.popup a {
+    transition: .5s;
+    color: #298cad;
+}
+.popup input {
+    display: block;
+    width: 100%;
+}
+.tab-form {
+    background: #fff;
+    display: none;
+    padding: 30px 20px 20px;
+}
+.tab-form.active {
+    background: #fff;
+    display: block;
+}
+.tab {
+    color: #fff;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+.tab.active {
+    background: #fff;
+    color: #250F8A;
+    /* border-radius: 20px 20px 0 0; */
+}
+.input {
+    font-size: 16px;
+    border: 2px solid #e9eaea;
+    border-radius: 20px;
+    padding: 12px 14px;
+    margin-bottom: 22px;
+    color: #250F8A;
+    outline: none;
+    box-sizing: border-box;
+}
+a.form-btn {
+
+}
+.forgot {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 12px;
+    color: #250F8A;
+}
 .header-slider__item {
     outline: none;
 }
