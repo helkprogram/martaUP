@@ -13,8 +13,30 @@ $(function () {
     });
 
 
-    $('.login').magnificPopup();
-    $('.signup').magnificPopup();
+    $('.login').magnificPopup({
+        type: 'inline',
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+        zoom: {
+            enabled: true,
+            duration: 1000,
+            easing: 'ease-in-out',
+            opener: function (openerElement) {
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+    });
+    $('.signup').magnificPopup({
+        type: 'inline',
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+        zoom: {
+            enabled: true,
+            duration: 1000,
+            easing: 'ease-in-out',
+            opener: function (openerElement) {
+                return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+    });
     $('.signup').on('click', function () {
         $('.popup').find('.active').removeClass('active');
         $('.tab').eq(1).addClass('active');
